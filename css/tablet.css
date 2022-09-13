@@ -1,0 +1,64 @@
+@media (min-width: 768px) and (max-width: 1024px) {
+  /* hidden avatar */
+  .avt {
+    display: none;
+  }
+
+  /* navbar section */
+  nav div {
+    padding: 0px 24px;
+  }
+
+  #banner {
+    height: 360px;
+  }
+
+  /*infomation section */
+  #target {
+    padding: 80px 36px 50px 40px;
+  }
+
+  #personal-info {
+    padding: 80px 12px 50px 36px;
+  }
+
+  .section-title {
+    font-size: 28px;
+  }
+
+  /* certificate section*/
+  .cert--1,
+  .cert--2,
+  .cert--3 {
+    /* đặt ảnh và nội dung cạnh nhau */
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .cert--1 img,
+  .cert--2 img,
+  .cert--3 img {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 8px;
+  }
+
+  /* project section */
+  .pj-job {
+    font-size: 14px;
+    padding: 0 12px;
+  }
+
+  .prj-title {
+    font-size: 16px;
+  }
+
+  .year {
+    font-size: 14px;
+  }
+
+  .pj-detail {
+    font-size: 13px;
+  }
+}

@@ -1,0 +1,507 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+/* Thiết lập font chữ */
+body {
+  font-family: "open sans", "fontello", sans-serif;
+}
+
+/* Thêm màu nền của một số section */
+.bg-grey {
+  background: #f7f7f7;
+}
+
+/* Thiết lập chiều rộng và căn chỉnh */
+section > .container {
+  width: 1170px;
+  margin: auto;
+  display: block;
+  color: #343a40;
+  padding: 30px 50px;
+}
+
+/* banner */
+/* #banner {
+  width: 100%;
+  height: 500px;
+  color: #fff;
+  background-image: linear-gradient(
+      rgba(28, 28, 28, 0.501),
+      rgba(86, 86, 86, 0.321)
+    ),
+    url(/images/banner.jpg);
+  background-size: cover;
+  background-position: center;
+} */
+
+#banner {
+  width: 100%;
+  height: 450px;
+  color: #fff;
+
+  /* ẩn phần ảnh bị dư ra */
+  overflow: hidden;
+  position: relative;
+}
+
+#banner img {
+  width: 100%;
+
+  /* Chỉnh độ sáng của ảnh nền */
+  filter: brightness(50%);
+  position: absolute;
+
+  /* thiết lập vị trí */
+  top: 0px;
+  left: 0px;
+}
+
+/* căn chỉnh phần nội dung banner ở giữa và chồng lên ảnh */
+#banner h1 {
+  font-size: 36px;
+  font-weight: 600;
+  position: absolute;
+  top: 125px;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+#banner span {
+  font-size: 16px;
+  font-weight: 300;
+  position: absolute;
+  top: 180px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  color: #ced4da;
+}
+
+/* tạo style cho phần nav-bar */
+#nav-bar {
+  margin-bottom: 4px;
+  font-size: 12px;
+  font-weight: 500;
+
+  /* đổ bóng cho nav-bar */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.15);
+}
+
+#nav-bar .container {
+  padding-top: 0px;
+  padding-bottom: 0px;
+
+  /* căn chỉnh nội dung văn bản nằm chính giữa */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+nav div {
+  padding: 0px 200px 12px 128px;
+}
+
+/* Tạo avatar cá nhân theo yêu cầu và đổ bóng */
+.avt {
+  width: 150px;
+  height: 150px;
+  border: 8px solid #fff;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.15);
+}
+
+/* Phần bị avatar thay thế */
+/* .name {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.job {
+  font-size: 12px;
+  font-weight: 400;
+  color: #adb5bd;
+} */
+
+/* thiết lập style của link */
+nav a:link,
+nav a:visited {
+  height: 100%;
+  color: #495057;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: inline-block;
+  padding: 16px 32px;
+  flex-shrink: 0;
+}
+
+.nav--link i {
+  /* màu của icon */
+  color: #339af0;
+}
+
+/* thiết lập border cho nav-link */
+.nav--link {
+  border-left: 1px solid #dee2e6;
+}
+
+.nav--link:nth-child(2),
+.nav--link:last-child {
+  border-right: 1px solid #dee2e6;
+}
+
+/* CSS about section*/
+#about .container-fluid {
+  margin: 0;
+  padding: 0;
+}
+
+#target {
+  width: 100%;
+  margin-top: 20px;
+  padding: 80px 50px 50px 215px;
+}
+
+#target p {
+  font-size: 14px;
+  color: #495057;
+  line-height: 1.6;
+}
+
+#personal-info {
+  padding: 80px 0px 50px 50px;
+}
+
+.section-title {
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 32px;
+}
+
+.info {
+  font-size: 14px;
+  color: #495057;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 0;
+  margin-bottom: 24px;
+}
+
+/* tô đậm các phần xác định thông tin  */
+li span:first-child {
+  font-weight: 500;
+}
+
+/* chỉnh màu cho icon */
+.icons-personal {
+  color: #339af0;
+}
+
+/* thiết lập màu sáng hơn cho 1 phần của thông tin cá nhân */
+.bg-grey .bg-right {
+  background-color: #e9ecef;
+}
+
+#job-info .header-section h1 {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.exp,
+.edu,
+.act,
+.hobby,
+.lang,
+.skills {
+  font-size: 14px;
+  /* tạo đường viền cho mỗi phần thông tin */
+  border: 1px solid #e9ecef;
+}
+
+.dots {
+  padding-left: 32px;
+  margin-bottom: 32px;
+  position: relative;
+}
+
+.content p {
+  margin-bottom: 0;
+}
+
+/* tạo bullet points hình tròn và màu sắc cho nó */
+.dots::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #339af0;
+  position: absolute;
+  left: 0px;
+  top: 8px;
+}
+
+.dots p:first-child {
+  font-size: 16px;
+  color: #495057;
+  font-weight: 500;
+  list-style: none;
+}
+
+/* làm cho h1 và icon nằm cạnh nhau và căn chỉnh*/
+.header-section {
+  display: flex;
+  flex-grow: 1;
+}
+
+.header-section h1 {
+  display: inline-block;
+  padding: 48px 0 0 24px;
+  width: 70%;
+}
+
+.header-section i {
+  display: inline-block;
+  padding: 48px 0 0 12px;
+  width: 30%;
+  font-size: 32px;
+  color: #adb5bd;
+}
+
+.content {
+  padding: 64px 32px 32px 24px;
+  line-height: 1.6;
+}
+
+.content p {
+  color: #495057;
+}
+
+/* Thiết lập bullet cho list là "-" */
+.list {
+  font-size: 14px;
+  padding: 0;
+  margin: 0;
+  list-style: inside "-";
+  color: #868e96;
+}
+
+.list li {
+  padding-bottom: 4px;
+}
+
+.time {
+  font-style: italic;
+  color: #868e96;
+  padding: 4px 0 8px 0;
+}
+
+/* tạo nền và màu chữ khác cho nội dung: "hiện tại" */
+.time span {
+  display: inline-block;
+  background-color: #339af0;
+  color: #fff;
+  border-radius: 8px;
+  padding: 0 12px;
+}
+
+/* Tạo vòng tròn bao quanh icon của hobby và style cho nó*/
+.music i,
+.game i,
+.travel i,
+.cook i {
+  font-size: 24px;
+  color: #339af0;
+  width: 48px;
+  height: 48px;
+  margin: 12px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #339af0;
+  border-radius: 90%;
+}
+
+.hobby .content {
+  display: flex;
+  padding-top: 32px;
+  flex-grow: 1;
+  gap: 16px;
+}
+
+/* chỉnh kích thước của vạch level */
+.level span {
+  display: inline-block;
+  width: 48px;
+  height: 3px;
+  margin-right: 12px;
+}
+
+/* chỉnh màu biểu hiện mức độ của level */
+.ENG .level span:nth-child(1),
+.ENG .level span:nth-child(2),
+.JP .level span,
+.HTML .level span:nth-child(1),
+.JS .level span:nth-child(1),
+.JS .level span:nth-child(2),
+.noteJS .level span:nth-child(1),
+.noteJS .level span:nth-child(2),
+.C .level span:nth-child(1) {
+  background-color: #339af0;
+}
+
+.ENG .level span:nth-child(3),
+.HTML .level span:nth-child(2),
+.HTML .level span:nth-child(3),
+.JS .level span:nth-child(3),
+.noteJS .level span:nth-child(3),
+.C .level span:nth-child(2),
+.C .level span:nth-child(3) {
+  background-color: #dee2e6;
+}
+
+.cert--1,
+.cert--2,
+.cert--3 {
+  /* đặt ảnh và nội dung cạnh nhau */
+  display: flex;
+  margin: 32px 0;
+  padding: 0 24px;
+}
+
+/* thiết lập đường viền */
+.cert--1 {
+  border-right: 1px solid #d6c08d;
+}
+
+.part-1,
+.part-2 {
+  border-bottom: 1px solid #d6c08d;
+}
+
+/* Căn chỉnh kích thước ảnh */
+.cert--1 img,
+.cert--2 img,
+.cert--3 img {
+  width: 35%;
+  margin-right: 32px;
+}
+
+.cert-content p {
+  font-size: 14px;
+  font-weight: 500;
+  color: #495057;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+}
+
+.cert-content .list {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/* tạo viền */
+.project-1,
+.project-2,
+.project-3 {
+  height: 100%;
+  border: 2px solid #e9ecef;
+}
+
+.project-1 img,
+.project-2 img,
+.project-3 img {
+  width: 100%;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.prj-title {
+  font-size: 18px;
+  font-weight: 600;
+  padding: 12px;
+  color: #495057;
+  text-transform: uppercase;
+  border-bottom: 1px solid #e9ecef;
+}
+
+/* Đặt các phần tử của project job cạnh nhau */
+.pj-job {
+  display: flex;
+  align-items: start;
+  gap: 14px;
+  padding: 0px 24px;
+  color: #868e96;
+}
+
+/* đặt màu nền và đổi màu chữ của "2021" */
+.year {
+  font-size: 12px;
+  width: 48px;
+  height: 24px;
+  color: #fff;
+  background-color: #339af0;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pj-detail {
+  color: #868e96;
+  border-collapse: collapse;
+}
+
+tr td {
+  font-size: 14px;
+  border-top: 1px solid #ced4da;
+  padding: 8px;
+  /* căn chỉnh table data theo chiều dọc */
+  vertical-align: top;
+}
+
+tr td:first-child {
+  width: 30%;
+  font-weight: 500;
+}
+
+/* tạo style cho footer */
+.footer-list {
+  font-size: 14px;
+  list-style: none;
+  text-align: center;
+}
+
+.footer-list {
+  padding-left: 0;
+}
+
+.footer-list li {
+  display: inline-block;
+  margin-left: 32px;
+}
+
+/* căn chỉnh icon và nội dung */
+.footer-link {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-list li a:link,
+.footer-list li a:visited {
+  color: #868e96;
+  text-decoration: none;
+}
+
+.icon-facebook-circled,
+.icon-linkedin-circled,
+.icon-github-circled {
+  font-size: 200%;
+  color: #339af0;
+}

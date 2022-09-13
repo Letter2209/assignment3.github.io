@@ -1,0 +1,89 @@
+@media (max-width: 768px) {
+  /* hidden avatar */
+  .avt {
+    display: none;
+  }
+
+  /* navbar section */
+  #nav-bar .container {
+    margin: 0;
+    padding: 12px;
+    font-size: 18px;
+    display: block;
+  }
+
+  #nav-bar {
+    /* cancel shadow */
+    box-shadow: none;
+  }
+
+  nav div {
+    display: none;
+  }
+
+  nav a:link,
+  nav a:visited {
+    display: block;
+    padding: 12px 32px;
+  }
+
+  .nav--link {
+    border-left: none;
+  }
+
+  .nav--link:nth-child(2),
+  .nav--link:last-child {
+    border-right: none;
+  }
+
+  #banner {
+    height: 320px;
+  }
+
+  /*infomation section */
+  #target {
+    padding: 80px 36px 50px 24px;
+  }
+
+  #target p,
+  .info {
+    font-size: 18px;
+  }
+
+  #personal-info {
+    padding: 80px 12px 50px 24px;
+  }
+
+  .section-title {
+    font-size: 28px;
+  }
+
+  .icons-personal {
+    font-size: 20px;
+  }
+
+  /* job infomation */
+  .list {
+    font-size: 16px;
+  }
+
+  /* certificate section*/
+  .cert--1,
+  .cert--2,
+  .cert--3 {
+    /* đặt ảnh và nội dung cạnh nhau */
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 12px;
+    border-right: none;
+  }
+
+  .cert--1 img,
+  .cert--2 img,
+  .cert--3 img {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 8px;
+  }
+}

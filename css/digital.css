@@ -1,0 +1,15 @@
+.number {
+  width: 42px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  background-color: #b197fc;
+  border: 1px solid #c92a2a;
+  border-radius: 50%;
+}
+
+.timeline-content {
+  border-bottom: 2px dotted #74c0fc;
+}
